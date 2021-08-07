@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+    /* naranja: #F0A83E;
+    marron: #3C2313; */
+ul{
+    list-style: none;
+}
+    
+header div, header ul{
+    display: none;
+}
+
+/* header{ */
+.navegacion{
+    background-color: #F0A83E;
+    height: 54px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navegacion nav ul li::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1b0";
+    margin-right: 2px;
+}
+
+header .menu{
+    width: 20px;
+    height: 16px;
+}
+
+.bienvenida{
+    height: 409px;
+    background-image: url(../img/Fondo.jpg);
+    padding: .3rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: flex-end;
+}
+
+.bienvenida h2{
+    width: 320px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: white;
+    color: #3C2313;
+    font-weight: normal;
+    text-align: center;
+    padding-top: .6rem;
+}
+
+.bienvenida p{
+    color: #3C2313;
+    margin: 10px 0;
+}
+
+.bienvenida button{
+    width: 141px;
+    height: 49px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:#F0A83E;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.encabezado h2{
+    text-align: center;
+    color: #3C2313;
+    font-size: 40px;
+    margin: 1rem 0px;
+}
+
+.enc-links{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
+.enc-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+.productos{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta{
+    height: 283px;
+    width: 237px;
+    background-color:#FBFAF6;
+    margin: 1.2rem 0;
+}
+
+.tarjeta img{
+    width: 100%;
+}
+
+.tarjeta footer{
+    background-color:#FBFAF6;
+}
+
+.tarjeta h4{
+    color: #3C2313;
+    font-weight: 13px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.tarjeta p{
+    color: #F0A83E;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.contactanos h2{
+    color: #3C2313;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1.3rem 0;
+}
+
+.contactanos form{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contactanos form input{
+    background-color: #3C2313;
+    color: white;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 298px;
+    height: 40px;
+    font-size: 9px;
+    margin: 4px;
+}
+
+.contactanos form button{
+    width: 165px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 35px;
+}
+
+.reset{
+    background-color: #8A8787;
+}
+
+.enviar{
+    background-color: #F0A83E;
+}
+
+footer .suscribete{
+    background-color:#F0A83E;
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscribete .mas-novedades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suscribete .mas-novedades span{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.suscribete form input{
+    width: 233px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.suscribete form button{
+    background-color: #3C2313;
+    color: white;
+    width: 95px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.datos{
+    background-color:#3C2313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.datos-card img{
+    width: 3.5rem;
+    margin-right: 10px;
+}
+
+.datos-titulos{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.datos-subtitulos{
+    color: grey;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 3px;
+}
+
+/* ---- VALIDACIONES ---- */
+.contactanos form input:focus{
+    outline: none;
+    border: 2px solid #F0A83E;
+}
+
+footer form input:focus{
+    outline: none;
+    border: 2px solid #3C2313;
+}
+
+.contactanos form input:valid, 
+footer form input:valid{
+    border: 2px inset rgb(11, 196, 11);
+}
+
+.contactanos form input:invalid, 
+footer form input:invalid{
+    border: 2px inset red;
+}
+
+@media (min-width:768px){
+
+    header .menu{
+        display: none;
+    }
+
+    header div{
+        background-color: #000;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    
+    header ul{
+        display:flex;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul li{
+        padding: 0 10px;
+    }
+
+    .productos{
+        display: flex;
+        flex-flow:row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer .suscribete{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+
+    .suscribete .mas-novedades{
+        margin-bottom: 0;
+    }
+
+    .datos{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+}
